@@ -1,0 +1,190 @@
+@import "normalize.css";
+:root {
+  font-size: 10px;
+  width: 100%;
+}
+
+body {
+  margin: 0px;
+  font-family: Roboto, serif;
+}
+body a {
+  text-decoration: none;
+  color: black;
+  color: #353535;
+}
+body h2 {
+  font-family: Shrikhand, Roboto, serif;
+  font-size: 2.8rem;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+body h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: rgb(82, 82, 82);
+  margin-bottom: 5px;
+}
+body .trait_vert {
+  width: 40px;
+  border-bottom: 3px solid #99e2d0;
+  margin-bottom: 10px;
+}
+
+header {
+  width: 100%;
+  margin: 0px;
+}
+header .entete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .entete h1 {
+  font-family: Shrikhand, serif;
+  font-size: 3.2rem;
+  text-decoration: none;
+  color: black;
+  margin: 0px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgrey;
+  box-shadow: 0px 3px 5px #cdcdcd;
+  background-color: white;
+  padding: 0px;
+  padding-top: 10px;
+  font-size: 3rem;
+  font-weight: 100;
+  box-shadow: none;
+  border-bottom: none;
+}
+header .entete svg {
+  font-size: 2rem;
+  position: absolute;
+  left: 5%;
+  top: 3%;
+}
+header .image_header {
+  overflow: hidden;
+  width: 100%;
+  height: 240px;
+}
+header .image_header img {
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: inherit;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  border-top: 1px solid white;
+  background-color: white;
+  border-radius: 35px;
+  margin-top: -40px;
+}
+main .menu {
+  width: 90%;
+  margin: auto;
+}
+main .nom_resto {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .nom_resto svg {
+  position: absolute;
+  font-size: 2.4rem;
+  top: 4%;
+  left: 85%;
+}
+main section {
+  margin-bottom: 20px;
+}
+main section a {
+  border: none;
+  height: 7rem;
+  width: 100%;
+  border-radius: 1.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  box-shadow: 0px 4px 10px 1px #dddddd;
+  color: black;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+main .texte_plats {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+main .texte_plats p {
+  margin: 0px;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+main .texte_plats h4 {
+  margin-top: 0px;
+  max-block-size: 10px;
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+}
+main .prix {
+  padding-right: 20px;
+  align-self: end;
+  padding-bottom: 13px;
+  font-size: 1.5rem;
+}
+main button {
+  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+  justify-content: center;
+  border: none;
+  height: 5rem;
+  width: 60%;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  box-shadow: 0px 5px 10px 2px #CDCDCD;
+  color: white;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+}
+
+footer {
+  background-color: #353535;
+  width: 100%;
+  color: white;
+  padding-bottom: 30px;
+  margin-bottom: -10px;
+}
+footer p {
+  color: white;
+  margin: 6px 0px;
+  font-size: 1.6rem;
+}
+footer h4 {
+  font-family: Shrikhand, Roboto, serif;
+  width: 90%;
+  margin: auto;
+  font-size: 1.8rem;
+  font-weight: normal;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+footer .liens_footer {
+  width: 90%;
+  margin: auto;
+}
+footer .liens_footer svg {
+  padding-right: 10px;
+  font-size: 1.3rem;
+  vertical-align: baseline;
+}/*# sourceMappingURL=style_pages.css.map */

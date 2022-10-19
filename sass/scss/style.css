@@ -1,0 +1,256 @@
+@import "normalize.css";
+:root {
+  font-size: 10px;
+  width: 100%;
+}
+
+body {
+  font-family: Roboto, serif;
+  margin: 0px !important;
+}
+body h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+body p {
+  font-size: 1.6rem;
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  margin: 0px;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #eaeaea;
+}
+header h1 {
+  font-family: Shrikhand, serif;
+  font-size: 3.2rem;
+  font-weight: 100;
+  text-decoration: none;
+  color: black;
+  margin: 0px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgrey;
+  box-shadow: 0px 3px 5px #cdcdcd;
+  background-color: white;
+}
+header a {
+  text-decoration: none;
+}
+header p {
+  padding-left: 20px;
+  font-weight: 500;
+  color: #4c4c4c;
+}
+header .localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -20px;
+}
+header svg {
+  font-size: 1.8rem;
+}
+
+#presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+#presentation h2 {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0;
+  width: 70%;
+}
+#presentation p {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #7e7e7e;
+  margin-bottom: 30px;
+  width: 90%;
+}
+#presentation .presentation_btn {
+  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+  justify-content: center;
+  border: none;
+  height: 5rem;
+  width: 60%;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  box-shadow: 0px 5px 10px 2px #CDCDCD;
+  color: white;
+  margin-bottom: 0px;
+}
+
+#fonctionnement {
+  width: 85%;
+  margin: auto;
+  padding-left: 20px;
+  margin-bottom: 120px;
+}
+#fonctionnement h2 {
+  margin-left: -20px;
+}
+#fonctionnement button {
+  border: none;
+  height: 7rem;
+  width: 100%;
+  border-radius: 1.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  box-shadow: 0px 4px 10px 1px #dddddd;
+  color: black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-content: flex-start;
+  font-weight: 600;
+}
+#fonctionnement button .numeros {
+  background-color: #9356dc;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  left: 8%;
+}
+#fonctionnement button .numeros p {
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+#fonctionnement button:hover, #fonctionnement :active {
+  background-color: #f5edff;
+}
+#fonctionnement button:hover .icones_accueil, #fonctionnement :active .icones_accueil {
+  color: #9356dc;
+}
+#fonctionnement .icones_accueil {
+  font-size: 2rem;
+  color: #7e7e7e;
+  width: 20%;
+}
+
+#restaurants {
+  margin-bottom: 60px;
+}
+#restaurants h2 {
+  margin-left: 20px;
+}
+#restaurants .main_cards {
+  width: 90%;
+  margin: auto;
+  height: 250px;
+  overflow: hidden;
+  border: 0px solid;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 2px 12px 0px #CDCDCD;
+  margin-bottom: 20px;
+  position: relative;
+}
+#restaurants .main_cards .new {
+  position: absolute;
+  top: 5%;
+  left: 73%;
+  background-color: #99e2d0;
+  border-radius: 2px;
+  box-shadow: 1px 2px 5px -2px grey;
+  width: 75px;
+  text-align: center;
+  color: #008766;
+  z-index: 1;
+}
+#restaurants .main_cards .new p {
+  font-size: 1.3rem;
+  margin: 6px 0px;
+  font-weight: 500;
+}
+#restaurants .main_cards img {
+  height: 220px;
+  width: 100%;
+  position: absolute;
+  top: -50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#restaurants .main_cards .text_cards {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 170px;
+  padding-left: 15px;
+}
+#restaurants .main_cards .text_cards p {
+  margin: 0px;
+  font-size: 1.7rem;
+}
+#restaurants .main_cards .coeur_vide, #restaurants .main_cards .coeur_plein {
+  position: absolute;
+  top: 79%;
+  left: 85%;
+  font-size: 2.3rem;
+  font-weight: 100;
+  cursor: pointer;
+}
+#restaurants .main_cards .coeur_plein {
+  color: #ff79da;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-image: linear-gradient(to top, #ff79da, #9356dc);
+}
+#restaurants .main_cards .coeur_plein:hover {
+  opacity: 1;
+}
+#restaurants h3 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+footer {
+  background-color: #353535;
+  width: 100%;
+  color: white;
+  padding-bottom: 30px;
+  margin-bottom: 0px;
+}
+footer p {
+  color: white;
+  margin: 6px 0px;
+}
+footer h4 {
+  font-family: Shrikhand, Roboto, serif;
+  width: 90%;
+  margin: auto;
+  font-size: 1.8rem;
+  font-weight: normal;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+footer .liens_footer {
+  width: 90%;
+  margin: auto;
+}
+footer .liens_footer svg {
+  padding-right: 10px;
+  font-size: 1.3rem;
+  vertical-align: baseline;
+}/*# sourceMappingURL=style.css.map */
