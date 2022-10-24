@@ -26,6 +26,8 @@ body{
         color: black;
     }
 
+/***************loader*********************/
+
     .lettres{
         position: relative;
         font-family: Shrikhand;
@@ -160,7 +162,7 @@ body{
         }
     }        
     
-  
+/********************fin loader**************/
 
 }
 
@@ -168,7 +170,7 @@ header{
     margin: 0px;
     text-align: center;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: #eaeaea;
 
     h1{
@@ -241,6 +243,10 @@ header{
     .presentation_btn{
         @include bouton_rose;
     }    
+
+    .presentation_btn:hover{
+        box-shadow: 0px 5px 10px 2px #383838;        
+    }
 }
 
 #fonctionnement{
@@ -299,6 +305,16 @@ header{
         margin-left: 20px
     }
 
+    h3{
+        font-size: 1.8rem;
+        margin-bottom: 5px;        
+    }
+
+    .main_cards:hover{
+        box-shadow: 0px 2px 12px 2px #ff79da;
+        border: 2px solid #9356dc;
+    }
+
     .main_cards{        
         @include centrage_page;
         height: 250px;
@@ -327,7 +343,6 @@ header{
                 margin: 6px 0px;
                 font-weight: 500;
             }
-
         }
 
         img{
@@ -350,39 +365,11 @@ header{
                 font-size: 1.7rem;
             }
         }
-
-        .coeur_vide, .coeur_plein{
-            position: absolute;
-            top: 79%;
-            left: 85%;
-            font-size: 2.3rem; 
-            font-weight: 100;  
-            cursor: pointer;  
-                   
-        }       
-
-        .coeur_plein{
-            color: transparent; 
-            z-index: 1;
-            opacity: 0;
-            transform-origin: 50% 50%;
-            transform: scale(0);
-            @include coeur_degrade;
-            background-clip: text;           
-            -webkit-background-clip: text;                  
-            
-            &:hover{
-                opacity: 1;
-            }            
+        
+        .div_coeur{ 
+            @include coeur;
         }
-
     }
-
-    h3{
-        font-size: 1.8rem;
-        margin-bottom: 5px;        
-    }
-
 }
 
 footer{
@@ -415,9 +402,6 @@ footer{
             vertical-align: baseline;
         }
     }
-
-
-
-
 }
+
     

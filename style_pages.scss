@@ -46,6 +46,7 @@ header{
 
     .entete{
         @include flex_center;
+        margin-bottom: 5px;
                 
         h1{
             @include h1_;
@@ -55,13 +56,13 @@ header{
             font-weight: 100;
             box-shadow: none;
             border-bottom: none;
-        }
+        }        
 
         svg{
             font-size: 2rem;
             position: absolute;
             left: 5%;
-            top: 3%;        
+            top: 2.5%;        
         }
     }
 
@@ -98,13 +99,12 @@ main{
         margin-top: 10px;
         @include flex_between;
 
-        svg{ 
-            position: absolute;
-            font-size: 2.4rem;
-            top: 4%;
-            left: 85%;
-        }
+        .div_coeur{ 
+            @include coeur_menu;
+            }          
+        
     }
+
 
 
     section{

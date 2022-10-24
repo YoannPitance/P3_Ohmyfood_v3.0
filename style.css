@@ -7,6 +7,8 @@
 body {
   font-family: Roboto, serif;
   margin: 0px !important;
+  /***************loader*********************/
+  /********************fin loader**************/
 }
 body h2 {
   font-size: 2.4rem;
@@ -207,7 +209,7 @@ header {
   margin: 0px;
   text-align: center;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
   background-color: #eaeaea;
 }
 header h1 {
@@ -284,6 +286,9 @@ header svg {
   color: white;
   margin-bottom: 0px;
 }
+#presentation .presentation_btn:hover {
+  box-shadow: 0px 5px 10px 2px #383838;
+}
 
 #fonctionnement {
   width: 85%;
@@ -345,6 +350,14 @@ header svg {
 #restaurants h2 {
   margin-left: 20px;
 }
+#restaurants h3 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+#restaurants .main_cards:hover {
+  box-shadow: 0px 2px 12px 2px #ff79da;
+  border: 2px solid #9356dc;
+}
 #restaurants .main_cards {
   width: 90%;
   margin: auto;
@@ -393,30 +406,49 @@ header svg {
   margin: 0px;
   font-size: 1.7rem;
 }
-#restaurants .main_cards .coeur_vide, #restaurants .main_cards .coeur_plein {
+#restaurants .main_cards .div_coeur {
+  width: auto;
   position: absolute;
   top: 79%;
   left: 85%;
-  font-size: 2.3rem;
-  font-weight: 100;
   cursor: pointer;
 }
-#restaurants .main_cards .coeur_plein {
-  color: transparent;
-  z-index: 1;
+#restaurants .main_cards .div_coeur .coeur_vide, #restaurants .main_cards .div_coeur .coeur_plein {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+}
+#restaurants .main_cards .div_coeur .coeur_plein {
   opacity: 0;
-  transform-origin: 50% 50%;
-  transform: scale(0);
-  background-image: linear-gradient(to top, #ff79da, #9356dc);
-  background-clip: text;
-  -webkit-background-clip: text;
 }
-#restaurants .main_cards .coeur_plein:hover {
-  opacity: 1;
+#restaurants .main_cards .div_coeur:hover .coeur_vide {
+  opacity: 0;
 }
-#restaurants h3 {
-  font-size: 1.8rem;
-  margin-bottom: 5px;
+#restaurants .main_cards .div_coeur:hover .coeur_plein {
+  -webkit-animation: apparition 1s ease-in-out forwards;
+          animation: apparition 1s ease-in-out forwards;
+}
+@-webkit-keyframes apparition {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes apparition {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 footer {

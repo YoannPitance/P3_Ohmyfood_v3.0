@@ -39,6 +39,7 @@ header .entete {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5px;
 }
 header .entete h1 {
   font-family: Shrikhand, serif;
@@ -61,7 +62,7 @@ header .entete svg {
   font-size: 2rem;
   position: absolute;
   left: 5%;
-  top: 3%;
+  top: 2.5%;
 }
 header .image_header {
   overflow: hidden;
@@ -94,11 +95,49 @@ main .nom_resto {
   justify-content: space-between;
   align-items: center;
 }
-main .nom_resto svg {
+main .nom_resto .div_coeur {
+  width: auto;
   position: absolute;
-  font-size: 2.4rem;
-  top: 4%;
+  top: 3.8%;
   left: 85%;
+  cursor: pointer;
+}
+main .nom_resto .div_coeur .coeur_vide, main .nom_resto .div_coeur .coeur_plein {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+}
+main .nom_resto .div_coeur .coeur_plein {
+  opacity: 0;
+}
+main .nom_resto .div_coeur:hover .coeur_vide {
+  opacity: 0;
+}
+main .nom_resto .div_coeur:hover .coeur_plein {
+  -webkit-animation: apparition 1s ease-in-out forwards;
+          animation: apparition 1s ease-in-out forwards;
+}
+@-webkit-keyframes apparition {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes apparition {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 main section {
   margin-bottom: 20px;

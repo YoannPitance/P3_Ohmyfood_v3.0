@@ -25,6 +25,83 @@
         margin-bottom: 0px;
 }
 
+@mixin coeur{     
+        width: auto;
+        position: absolute;            
+        top: 79%;
+        left: 85%;
+        cursor: pointer;            
+        
+        .coeur_vide, .coeur_plein{
+            width: 22px; 
+            height: 22px;  
+            position: absolute;              
+        }              
+
+        .coeur_plein{                 
+            opacity: 0;     
+        }
+
+        &:hover .coeur_vide{
+            opacity: 0;
+        }             
+
+        &:hover .coeur_plein{
+            animation: apparition 1s ease-in-out forwards;                  
+              
+            @keyframes apparition {
+                0% {
+                  opacity: 0.2;
+                }
+                50% {    
+                  opacity: 0.5;
+                }  
+                100% {
+                  opacity: 1;
+                }
+            }
+        }
+}      
+
+@mixin coeur_menu{     
+    width: auto;
+    position: absolute;            
+    top: 3.8%;
+    left: 85%;
+    cursor: pointer;            
+    
+    .coeur_vide, .coeur_plein{
+        width: 22px; 
+        height: 22px;  
+        position: absolute;              
+    }              
+
+    .coeur_plein{                 
+        opacity: 0;     
+    }
+
+    &:hover .coeur_vide{
+        opacity: 0;
+    }             
+
+    &:hover .coeur_plein{
+        animation: apparition 1s ease-in-out forwards;                  
+          
+        @keyframes apparition {
+            0% {
+              opacity: 0.2;
+            }
+            50% {    
+              opacity: 0.5;
+            }  
+            100% {
+              opacity: 1;
+            }
+        }
+    }
+}           
+
+
 @mixin icones_fonctionnement{
     font-size: 2rem;
     color: #7e7e7e;
