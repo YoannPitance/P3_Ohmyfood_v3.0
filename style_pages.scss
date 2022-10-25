@@ -62,7 +62,7 @@ header{
             font-size: 2rem;
             position: absolute;
             left: 5%;
-            top: 2.5%;        
+            top: 2.2%;        
         }
     }
 
@@ -101,11 +101,8 @@ main{
 
         .div_coeur{ 
             @include coeur_menu;
-            }          
-        
+            }       
     }
-
-
 
     section{
         margin-bottom: 20px;
@@ -116,6 +113,63 @@ main{
             justify-content: space-between;  
             align-items: center;   
             margin-bottom: 15px;               
+        }
+
+        a:hover{            
+            box-shadow: 0px 6px 6px -2px #444444;
+            opacity: 0.8;        
+        }
+
+        .ordre{
+            animation: apparition_menu 1s linear both;
+
+            &.delay1{
+                animation-delay: 2ms;
+            }   
+            &.delay2{
+                animation-delay: 400ms;
+            }                     
+            &.delay3{
+                animation-delay: 600ms;
+            }          
+            &.delay4{
+                animation-delay: 800ms;
+            }          
+            &.delay5{
+                animation-delay: 1000ms;
+            }          
+            &.delay6{
+                animation-delay: 1200ms;
+            }          
+            &.delay7{
+                animation-delay: 1400ms;
+            }          
+            &.delay8{
+                animation-delay: 1600ms;
+            }          
+            &.delay9{
+                animation-delay: 1800ms;
+            }          
+            &.delay10{
+                animation-delay: 2000ms;
+            }  
+
+            @keyframes apparition_menu {
+                0% {
+                    -webkit-transform: rotateX(-100deg);
+                            transform: rotateX(-100deg);
+                    -webkit-transform-origin: top;
+                            transform-origin: top;
+                    opacity: 0;
+                  }
+                  100% {
+                    -webkit-transform: rotateX(0deg);
+                            transform: rotateX(0deg);
+                    -webkit-transform-origin: top;
+                            transform-origin: top;
+                    opacity: 1;
+                  }
+            }             
         }
     }
 
@@ -148,8 +202,23 @@ main{
     button{
         @include bouton_rose;
         @include flex_center;
-        margin: 40px auto;       
+        margin: 40px auto; 
+        
+        transform: all 0.1s;    
     }
+
+    button:hover{
+        box-shadow: 0px 5px 10px 2px #444444; 
+        opacity: 0.8;        
+    }
+
+    button:active{
+        transform: translate(0, 5px);
+        opacity: 1;    
+        box-shadow: 0px 1px 10px 0px #444444;    
+    }
+
+
 
 }
 
