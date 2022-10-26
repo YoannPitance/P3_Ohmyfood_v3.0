@@ -107,12 +107,64 @@ main{
     section{
         margin-bottom: 20px;
 
+        a:hover{
+
+            .check{
+                width: 110px;
+                transform-origin: 100% 50%;
+                transition: all 0.5s linear;
+            }
+            .plat_choisi{
+                width: 60px;
+                transform-origin: 100% 50%;
+                transition: all 0.5s linear;
+            }
+
+            svg{                
+                animation: rotation 0.5s linear forwards;
+
+                @keyframes rotation {
+                    0% {
+                        -webkit-transform: rotate(0);
+                                transform: rotate(0);
+                                opacity: 0;
+                      }
+                      100% {
+                        -webkit-transform: rotate(360deg);
+                                transform: rotate(360deg);
+                                opacity: 1;
+                      }
+                }
+            }
+        }
+        
+
         a{
             @include style_btn;
-            display: flex;  
-            justify-content: space-between;  
-            align-items: center;   
-            margin-bottom: 15px;               
+            @include flex_between;  
+            margin-bottom: 15px; 
+
+            svg{
+                color: white;
+                font-size: 2.1rem;                                
+            }
+
+            .check{
+                @include flex_between;
+                height: 7rem;
+                width: 50px;
+                transform-origin: 100% 50%;
+                transition: all 0.5s linear;
+            }
+            
+            .plat_choisi{
+                @include flex_center;
+                height: 7rem;
+                border-radius: 0 1.8rem 1.8rem 0;
+                background-color: #99e2d0;
+                margin-left: -65px;
+                width: 0px;                
+            }
         }
 
         a:hover{            
@@ -177,11 +229,17 @@ main{
         display: flex;
         flex-direction: column;
         padding-left: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        
         
         p{
             margin: 0px;
             font-weight: 400;
             font-size: 1.4rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         h4{
@@ -195,15 +253,14 @@ main{
     .prix{
         padding-right: 20px;
         align-self: end;
-        padding-bottom: 13px; 
+        padding-bottom: 15px; 
         font-size: 1.5rem;       
     }
 
     button{
         @include bouton_rose;
         @include flex_center;
-        margin: 40px auto; 
-        
+        margin: 40px auto;        
         transform: all 0.1s;    
     }
 
