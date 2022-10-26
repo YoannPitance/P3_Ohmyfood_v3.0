@@ -121,7 +121,8 @@ main{
             }
 
             svg{                
-                animation: rotation 0.5s linear forwards;
+                animation: rotation 0.5s linear;
+                visibility: visible;
 
                 @keyframes rotation {
                     0% {
@@ -146,7 +147,8 @@ main{
 
             svg{
                 color: white;
-                font-size: 2.1rem;                                
+                font-size: 2.1rem;  
+                visibility: hidden;                              
             }
 
             .check{
@@ -244,9 +246,11 @@ main{
 
         h4{
             margin-top: 0px;
-            max-block-size: 10px;
+            max-block-size: 20px;
             font-size: 1.7rem;
-            margin-bottom: 15px;
+            margin-bottom: 5px;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
 

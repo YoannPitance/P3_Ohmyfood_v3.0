@@ -153,8 +153,9 @@ main section a:hover .plat_choisi {
   transition: all 0.5s linear;
 }
 main section a:hover svg {
-  -webkit-animation: rotation 0.5s linear forwards;
-          animation: rotation 0.5s linear forwards;
+  -webkit-animation: rotation 0.5s linear;
+          animation: rotation 0.5s linear;
+  visibility: visible;
 }
 @-webkit-keyframes rotation {
   0% {
@@ -194,6 +195,7 @@ main section a {
 main section a svg {
   color: white;
   font-size: 2.1rem;
+  visibility: hidden;
 }
 main section a .check {
   display: flex;
@@ -303,9 +305,11 @@ main .texte_plats p {
 }
 main .texte_plats h4 {
   margin-top: 0px;
-  max-block-size: 10px;
+  max-block-size: 20px;
   font-size: 1.7rem;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 main .prix {
   padding-right: 20px;
