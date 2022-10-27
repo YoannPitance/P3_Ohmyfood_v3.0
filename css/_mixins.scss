@@ -113,6 +113,12 @@
     align-items: center;
 }
 
+@mixin flex_start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;   
+}
+
 @mixin flex_between{
     display: flex;
     justify-content: space-between;

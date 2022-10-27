@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css\style.css" >
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
 </head>
 
 <body>
@@ -55,32 +55,32 @@
         <section id="fonctionnement">
 
             <h2>Fonctionnement</h2>
-            <button>
+            <div class="btn_fonctionnement">
                 <div class="numeros"><p>1</p>
                 </div>
                 <div class="icones_accueil">
                     <i class="fa-solid fa-mobile-screen"></i>
                 </div>
                 <p>Choisissez un restaurant</p> 
-            </button>
+            </div>
 
-            <button>
+            <div class="btn_fonctionnement">
                 <div class="numeros"><p>2</p>
                 </div>
                 <div class="icones_accueil">
                     <i class="fa-solid fa-list"></i>
                 </div>
                 <p>Composez votre menu</p>                 
-            </button>
+            </div>
 
-            <button>
+            <div class="btn_fonctionnement">
                 <div class="numeros"><p>3</p>
                 </div>
                 <div class="icones_accueil">
                     <i class="fa-solid fa-store"></i>
                 </div>
                 <p>Dégustez au restaurant</p>                 
-            </button>
+            </div>
 
         </section>
 
@@ -111,7 +111,7 @@
                                 <stop offset="100%"  stop-color="#9356dc"/>
                             </lineargradient>
                         </defs>
-                        <path fill="url(#degrade)" d="M74.6794 16.5166L75.806 17.8636L76.9604 16.5404C93.8038 -2.76692 120.722 -2.44123 137.224 17.2895C153.841 37.1596 153.55 69.1163 136.584 88.5639L74.5338 159.691L13.7867 87.0543L13.7861 87.0536L13.7765 87.0421L13.7764 87.0419C-2.84142 67.1718 -2.54965 35.2151 14.4162 15.7675C31.2596 -3.53981 58.1783 -3.21412 74.6794 16.5166Z" fill="black" stroke="none" stroke-width="0"/>
+                        <path fill="url(#degrade)" d="M74.6794 16.5166L75.806 17.8636L76.9604 16.5404C93.8038 -2.76692 120.722 -2.44123 137.224 17.2895C153.841 37.1596 153.55 69.1163 136.584 88.5639L74.5338 159.691L13.7867 87.0543L13.7861 87.0536L13.7765 87.0421L13.7764 87.0419C-2.84142 67.1718 -2.54965 35.2151 14.4162 15.7675C31.2596 -3.53981 58.1783 -3.21412 74.6794 16.5166Z" stroke="none" stroke-width="0"/>
                     </svg>                                     
                 </div>
             </div>
@@ -119,7 +119,7 @@
             
             <div class="main_cards">
 
-                <a href=la_note_enchantée.html">
+                <a href="la_note_enchantée.html">
                     <div class="new"><p>Nouveau</p></div>
                     <img src="images/La_note_enchantee.jpg" alt="photo d'un plat du restaurant La note enchantée à Charonne">
                     <div class="text_cards">
@@ -134,14 +134,8 @@
                         stroke-width="6"/>
                     </svg>
         
-                    <svg class="coeur_plein" width="151" height="162" viewBox="0 0 151 162" fill="url(#degrade)" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <lineargradient id="degrade" x1="0%" y1="100%" x2="20%" y2="0%">
-                                <stop offset="0%"  stop-color="#ff79da"/>
-                                <stop offset="100%"  stop-color="#9356dc"/>
-                            </lineargradient>
-                        </defs>
-                        <path fill="url(#degrade)" d="M74.6794 16.5166L75.806 17.8636L76.9604 16.5404C93.8038 -2.76692 120.722 -2.44123 137.224 17.2895C153.841 37.1596 153.55 69.1163 136.584 88.5639L74.5338 159.691L13.7867 87.0543L13.7861 87.0536L13.7765 87.0421L13.7764 87.0419C-2.84142 67.1718 -2.54965 35.2151 14.4162 15.7675C31.2596 -3.53981 58.1783 -3.21412 74.6794 16.5166Z" fill="black" stroke="none" stroke-width="0"/>
+                    <svg class="coeur_plein" width="151" height="162" viewBox="0 0 151 162" fill="url(#degrade)" xmlns="http://www.w3.org/2000/svg">                        
+                        <path fill="url#degrade)" d="M74.6794 16.5166L75.806 17.8636L76.9604 16.5404C93.8038 -2.76692 120.722 -2.44123 137.224 17.2895C153.841 37.1596 153.55 69.1163 136.584 88.5639L74.5338 159.691L13.7867 87.0543L13.7861 87.0536L13.7765 87.0421L13.7764 87.0419C-2.84142 67.1718 -2.54965 35.2151 14.4162 15.7675C31.2596 -3.53981 58.1783 -3.21412 74.6794 16.5166Z" stroke="none" stroke-width="0"/>
                     </svg>                                     
                 </div>
             </div>
@@ -162,14 +156,8 @@
                         stroke-width="6"/>
                     </svg>
         
-                    <svg class="coeur_plein" width="151" height="162" viewBox="0 0 151 162" fill="url(#degrade)" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <lineargradient id="degrade" x1="0%" y1="100%" x2="20%" y2="0%">
-                                <stop offset="0%"  stop-color="#ff79da"/>
-                                <stop offset="100%"  stop-color="#9356dc"/>
-                            </lineargradient>
-                        </defs>
-                        <path fill="url(#degrade)" d="M74.6794 16.5166L75.806 17.8636L76.9604 16.5404C93.8038 -2.76692 120.722 -2.44123 137.224 17.2895C153.841 37.1596 153.55 69.1163 136.584 88.5639L74.5338 159.691L13.7867 87.0543L13.7861 87.0536L13.7765 87.0421L13.7764 87.0419C-2.84142 67.1718 -2.54965 35.2151 14.4162 15.7675C31.2596 -3.53981 58.1783 -3.21412 74.6794 16.5166Z" fill="black" stroke="none" stroke-width="0"/>
+                    <svg class="coeur_plein" width="151" height="162" viewBox="0 0 151 162" fill="url(#degrade)" xmlns="http://www.w3.org/2000/svg">                        
+                        <path fill="url(#degrade)" d="M74.6794 16.5166L75.806 17.8636L76.9604 16.5404C93.8038 -2.76692 120.722 -2.44123 137.224 17.2895C153.841 37.1596 153.55 69.1163 136.584 88.5639L74.5338 159.691L13.7867 87.0543L13.7861 87.0536L13.7765 87.0421L13.7764 87.0419C-2.84142 67.1718 -2.54965 35.2151 14.4162 15.7675C31.2596 -3.53981 58.1783 -3.21412 74.6794 16.5166Z" stroke="none" stroke-width="0"/>
                     </svg>                                     
                 </div>
             </div>
@@ -190,14 +178,8 @@
                         stroke-width="6"/>
                     </svg>
         
-                    <svg class="coeur_plein" width="151" height="162" viewBox="0 0 151 162" fill="url(#degrade)" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <lineargradient id="degrade" x1="0%" y1="100%" x2="20%" y2="0%">
-                                <stop offset="0%"  stop-color="#ff79da"/>
-                                <stop offset="100%"  stop-color="#9356dc"/>
-                            </lineargradient>
-                        </defs>
-                        <path fill="url(#degrade)" d="M74.6794 16.5166L75.806 17.8636L76.9604 16.5404C93.8038 -2.76692 120.722 -2.44123 137.224 17.2895C153.841 37.1596 153.55 69.1163 136.584 88.5639L74.5338 159.691L13.7867 87.0543L13.7861 87.0536L13.7765 87.0421L13.7764 87.0419C-2.84142 67.1718 -2.54965 35.2151 14.4162 15.7675C31.2596 -3.53981 58.1783 -3.21412 74.6794 16.5166Z" fill="black" stroke="none" stroke-width="0"/>
+                    <svg class="coeur_plein" width="151" height="162" viewBox="0 0 151 162" fill="url(#degrade)" xmlns="http://www.w3.org/2000/svg">                        
+                        <path fill="url(#degrade)" d="M74.6794 16.5166L75.806 17.8636L76.9604 16.5404C93.8038 -2.76692 120.722 -2.44123 137.224 17.2895C153.841 37.1596 153.55 69.1163 136.584 88.5639L74.5338 159.691L13.7867 87.0543L13.7861 87.0536L13.7765 87.0421L13.7764 87.0419C-2.84142 67.1718 -2.54965 35.2151 14.4162 15.7675C31.2596 -3.53981 58.1783 -3.21412 74.6794 16.5166Z" stroke="none" stroke-width="0"/>
                     </svg>                                     
                 </div>
             </div>

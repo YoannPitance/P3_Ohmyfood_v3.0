@@ -333,7 +333,6 @@ main button {
   justify-content: center;
   align-items: center;
   margin: 40px auto;
-  transform: all 0.1s;
 }
 main button:hover {
   box-shadow: 0px 5px 10px 2px #444444;

@@ -266,16 +266,20 @@ header{
         margin-left: -20px
     }
 
-    button:hover{
+    .btn_fonctionnement:hover{
         box-shadow: 0px 6px 6px -2px #444444;
     }
 
-    button{
+    .btn_fonctionnement{
         @include style_btn;
-        @include flex_center;
-        margin-bottom: 30px;
-        justify-content: flex-start; 
+        @include flex_start;
+        margin-bottom: 30px;        
         font-weight: 600;
+
+        .icones_accueil{
+            margin-left: 40px;
+            width: 12%;
+        }
         
         .numeros{
             background-color: $primaire;
@@ -295,7 +299,7 @@ header{
 
     }
 
-    button:hover, :active{
+    .btn_fonctionnement:hover, :active{
         background-color: #f5edff;
 
         .icones_accueil{

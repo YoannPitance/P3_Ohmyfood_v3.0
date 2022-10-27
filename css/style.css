@@ -305,10 +305,10 @@ header svg {
 #fonctionnement h2 {
   margin-left: -20px;
 }
-#fonctionnement button:hover {
+#fonctionnement .btn_fonctionnement:hover {
   box-shadow: 0px 6px 6px -2px #444444;
 }
-#fonctionnement button {
+#fonctionnement .btn_fonctionnement {
   border: none;
   height: 7rem;
   width: 100%;
@@ -319,13 +319,16 @@ header svg {
   color: black;
   background-color: white;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 30px;
-  justify-content: flex-start;
   font-weight: 600;
 }
-#fonctionnement button .numeros {
+#fonctionnement .btn_fonctionnement .icones_accueil {
+  margin-left: 40px;
+  width: 12%;
+}
+#fonctionnement .btn_fonctionnement .numeros {
   background-color: #9356dc;
   border-radius: 100%;
   width: 25px;
@@ -337,14 +340,14 @@ header svg {
   position: absolute;
   left: 8%;
 }
-#fonctionnement button .numeros p {
+#fonctionnement .btn_fonctionnement .numeros p {
   font-weight: 400;
   font-size: 1.4rem;
 }
-#fonctionnement button:hover, #fonctionnement :active {
+#fonctionnement .btn_fonctionnement:hover, #fonctionnement :active {
   background-color: #f5edff;
 }
-#fonctionnement button:hover .icones_accueil, #fonctionnement :active .icones_accueil {
+#fonctionnement .btn_fonctionnement:hover .icones_accueil, #fonctionnement :active .icones_accueil {
   color: #9356dc;
 }
 #fonctionnement .icones_accueil {
