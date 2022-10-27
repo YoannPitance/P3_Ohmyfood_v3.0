@@ -384,6 +384,24 @@ header{
         
         .div_coeur{ 
             @include coeur;
+
+            input:checked ~ .coeur_plein {
+                opacity: 1;
+                animation: none;
+            }
+
+            input:checked ~ .coeur_vide{
+                opacity: 0;
+            }
+
+          
+            input{
+                position: absolute;
+                opacity: 0;                
+                width: 22px;
+                height: 22px;
+                z-index: 3;                
+            }            
         }
     }
 }
