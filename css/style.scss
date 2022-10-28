@@ -349,7 +349,7 @@ header{
             background-color: $tertiaire;
             border-radius: 2px;
             box-shadow: 1px 2px 5px -2px grey;
-            width: 75px;
+            width: 80px;
             text-align: center;
             color: #008766;            
             z-index: 1;
@@ -374,7 +374,8 @@ header{
             flex-direction: column;
             position: absolute;
             top: 170px;
-            padding-left: 15px;        
+            padding-left: 15px;
+            width: 75%;        
 
             p{
                 margin: 0px;
@@ -439,3 +440,104 @@ footer{
 }
 
     
+@media screen and (min-width: 900px){
+
+    #restaurants{
+        display: flex;
+        flex-wrap: wrap;
+
+        h2{
+            width: 100%;
+        }
+
+        .main_cards{
+            width: 45%;
+        }
+    }
+}
+
+@media screen and (min-width: 1100px){
+
+    .desktop{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #presentation{
+        width: 100%;
+        margin: 20px auto;
+        flex-direction: column;        
+        text-align: center;
+        justify-content: space-evenly;
+
+        
+        h2{
+            width: 100%;
+            font-size: 3.3rem;
+        }
+
+        p{
+            font-size: 2.3rem;
+        }
+
+        .presentation_btn{
+            width: 30%;
+            margin: 20px auto;
+            font-size: 2rem;
+        }
+    }
+
+    #fonctionnement{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;        
+        text-align: center;
+        width: 100%;
+        margin: 20px auto;
+        padding: 0px;
+
+        h2{
+            width: 90%;
+            font-size: 3rem;
+            margin: 25px auto;
+            
+        }
+
+        .btn_fonctionnement{            
+            width: 31%;
+            margin-bottom: 50px;
+
+            p, svg{
+                font-size: 2rem;
+            }
+
+            .numeros{
+                position: relative;
+                left: -2%;
+                width: 35px;
+                height: 35px;
+                
+                p{
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        &:before, &:after{
+            content: "";
+            width: 20%;
+            border-bottom: thick double $tertiaire;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
+
+    #restaurants{
+
+        h2{
+            font-size: 3rem;
+            text-align: center;
+            margin: 5px auto 40px auto;
+        }
+    }
+}

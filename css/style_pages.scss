@@ -123,7 +123,7 @@ main{
     }
 
     section{
-        margin-bottom: 20px;
+        margin-bottom: 20px; 
 
         a:hover{
 
@@ -156,7 +156,7 @@ main{
                 }
             }
         }
-        
+            
 
         a{
             @include style_btn;
@@ -166,7 +166,21 @@ main{
             svg{
                 color: white;
                 font-size: 2.1rem;  
-                visibility: hidden;                              
+                visibility: hidden; 
+                transition: all 0.3s linear;                            
+                animation: sortie 0.3s linear;
+                
+                @keyframes sortie {
+                    0%{
+                        transform: scale(1);
+                        opacity: 1;
+                    }
+    
+                    100%{
+                        transform: scale(0);
+                        opacity: 0;
+                    }
+                }
             }
 
             .check{
@@ -174,7 +188,8 @@ main{
                 height: 7rem;
                 width: 50px;
                 transform-origin: 100% 50%;
-                transition: all 0.5s linear;
+                transition: all 0.3s linear;
+                overflow: hidden;                                
             }
             
             .plat_choisi{
@@ -182,8 +197,10 @@ main{
                 height: 7rem;
                 border-radius: 0 1.8rem 1.8rem 0;
                 background-color: #99e2d0;
-                margin-left: -65px;
-                width: 0px;                
+                margin-left: -95px;
+                width: 0px;
+                transition: all 0.3s linear;  
+                                            
             }
         }
 
@@ -331,4 +348,78 @@ footer{
             vertical-align: baseline;
         }
     }
+}
+
+
+@media screen and (min-width: 900px){
+    
+    
+    header .entete{
+
+        svg{
+            top: 1.6%;
+        }
+    }
+
+    body{
+        .nom_resto{
+            justify-content: center;
+        }
+
+        h3{
+            text-align: center;
+        }
+
+        .trait_vert{            
+            width: 15%;
+            @include flex_center;
+            margin: 20px auto;
+        }
+
+        button{
+            width: 35%;
+        }
+    }
+}
+
+@media screen and (min-width: 1100px){
+
+    body{
+
+        height: 100%;
+        margin-bottom: 0px;
+        
+        .nom_resto{
+            width: 100%;
+            margin-top: 20px;
+
+            .div_coeur{
+                top: 8%;
+            }
+        }
+
+        form{
+            width: 100%;
+        }
+
+        .menu{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-bottom: 30px;
+
+
+            section{
+                margin-top: 20px;
+                width: 30%;
+            }
+        }
+
+        footer{
+            margin-bottom: -20px;            
+        }
+    }
+
+
 }
