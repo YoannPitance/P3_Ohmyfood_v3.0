@@ -1,6 +1,6 @@
 # P3 Ohmyfood
 
-## Projet d'apprentissage n°2 du parcours FDévellopeur Web Openclassrooms
+## Projet d'apprentissage n°3 du parcours FDévellopeur Web Openclassrooms
 ### "Dynamiser un site web avec des animations CSS"
 
 ### La validation de ce projet nécessitait de respecter les caracteristiques techniques suivantes:
